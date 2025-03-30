@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="body" class="bg-gradient-to-r from-indigo-500 to-purple-600 min-h-screen flex flex-col items-center">
+
+    <!-- <nav class="flex justify-between items-center bg-indigo-500 shadow-lg rounded-b-lg w-full px-10 py-4 text-white"> -->
+
+        <nav class="fixed top-0 left-0 w-full flex justify-between items-center bg-indigo-500 shadow-lg px-10 py-4 text-white z-50">
+
+            <h4 class="text-2xl font-bold">Student Portal</h4>
+
+            <ul class="flex space-x-8 list-none">
+                <li><a class="nav-link hover:text-pink-200" href="index.html"><strong>Register</strong></a></li>
+                <li><a class="nav-link hover:text-pink-200" href="#stu"><strong>Students</strong></a></li>
+                <!-- <li><a class="nav-link hover:text-pink-200" href="reports.html"><strong>Reports</strong></a></li> -->
+            </ul>
+
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- <h1>Student Registration System</h1> -->
+    <h1 id="reg" class="text-4xl font-extrabold text-center text-white mt-6 st">Student Registration System</h1>
+
+    <br>
+    <br>
+
+
+    <form id="Student" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+
+        <fieldset>
+
+            <div>
+
+            <label for="name"><h3>Student Name:</h3></label>
+            <input type="text" id="name" name="name" required 
+       class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            <br>
+            <br>
+            <label for="id"><h3>Student ID:</h3></label>
+            <input type="text" id="id" name="id" required 
+       class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            <br>
+            <br>
+            <label for="class"><h3>Class:</h3></label>
+            <input type="text" id="class" name="class" required 
+       class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            <br>
+            <br>
+            <label for="roll"><h3>Roll No:</h3></label>
+            <input type="text" id="roll" name="roll" required 
+       class="w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-md transform hover:scale-105">
+                Add Student
+            </button>
+
+            </div>
+
+
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <!-- <h1>Registered Students</h1> -->
+    <h1 id="stu" class="text-4xl font-extrabold text-center text-white mt-6">Registered Students</h1>
+
+    <br>
+    <br>
+
+
+    <table class="min-w-full border-collapse border border-gray-300 shadow-md">
+        <thead>
+            <tr class="bg-white text-voilet-800 divide-y divide-gray-600">
+                <th class="p-4 border border-gray-600">Name</th>
+                <th class="p-4 border border-gray-600">ID</th>
+                <th class="p-4 border border-gray-600">Class</th>
+                <th class="p-4 border border-gray-600">Roll No</th>
+                <th class="p-4 border border-gray-600">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentBody" class="bg-white divide-y divide-gray-600 text-gray-800">
+
+        </tbody>
+    </table>
+    
+    <script src="index.js"></script>
+</body>
+</html>
